@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/billing.css" />
+
+    <title>Payment Form</title>
+    <header>
+        <nav class="header_first" id="header_first">
+            <img id="hamburger_menu" src="../assets/hamburger.svg" alt="Menu" />
+            <img src="../assets/logo.png" alt="GJ KERAMIK LOGO"
+                class="logo_image" />
+            <div class="brand_width">
+                <a class="logo" href="index.html">
+                    <img src="../assets/brand_name.png"
+                        alt="GJ KERAMIK" /></a>
+            </div>
+
+            <div class="search_button">
+                <img id="search_icon" src="../assets/search.png"
+                    alt="Search" />
+            </div>
+            <a class="login" href="#"><img src="../assets/login.png"
+                    alt="login" /></a>
+            <a class="shopping_cart_fill" href="#" style=display:none;><img
+                    src="../assets/cartItem.png" alt="cart" /></a>
+            <a class="shopping_cart" href="#"><img
+                    src="../assets/cart.png" alt="cart" /></a>
+        </nav>
+        <nav class="header_second" id="header_second">
+            <img class="hidden" id="close_button"
+                src="../assets/close.png" alt="Menu" />
+
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li class="menu_dropdown">
+                    <a href="#">Shop</a>
+                    <div class="menu_mobile_arrows">
+                        <img id="mobile_menu_arrow"
+                            src="../assets/arrow_down.svg" alt="down" />
+                        <img class="hidden" id="arrow_up"
+                            src="../assets/arrow_up.svg" alt="up" />
+                    </div>
+                    <ul class="hidden" id="dropdown_content1">
+                        <li>
+                            <a href="product_list.html?category=figurine">Figurines</a>
+                        </li>
+                        <li>
+                            <a href="product_list.html?category=kitchenware">Kitchen Wares</a>
+                        </li>
+                        <li>
+                            <a href="product_list.html?category=vaseandpot">Vase & Pots</a>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="about_us.html">About GJ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+<body id="form_page">
+    <main>
+        <div class="form">
+            <h1>PAYMENT FORM</h1>
+            <form name="billing_form" action="thankyou.html">
+                <label>
+                    Card number <span class="red">*</span>
+                    <input type="text" required placeholder="xxxx-xxxx-xxxx-xxxx" />
+                </label>
+                <label>
+                    Expiry Date <span class="red">*</span>
+                    <input type="text" required placeholder="MM / YY" />
+                </label>
+                <label>
+                    Security Code <span class="red">*</span>
+                    <input type="text" required placeholder="CVC" />
+                </label>
+                <button class="btn btn_checkout">PAY</button>
+                <h3>Secured payments powered by PAYSAFE</h3>
+                <img src="../assets/cards.png"> 
+        </div>
+
+    </main>
+</body>
+<footer class="main_footer">
+    <div class="faq">
+        <div class="footer_heading_wrapper">
+            <h4>FAQ</h4>
+            <img src="../assets/arrow_down.svg" alt="arrow down icon" />
+        </div>
+        <ul>
+            <li><a href="#" class="footer_menu_link">Contact Us</a></li>
+            <li><a href="#" class="footer_menu_link">Terms and Conditions</a></li>
+            <li><a href="#" class="footer_menu_link">Privacy Policy</a></li>
+        </ul>
+        <div class="payment_images">
+            <br />
+            <img src="../assets/cards.png" alt="dankort"
+                class="footer_icon" />
+        </div>
+        <div class="footer_divider"></div>
+    </div>
+
+    <div class="signup">
+        <h4>Let's Keep in Touch</h4>
+        <p>
+            Sign up for my newsletter to be notified about the latest collections,
+            workshop events and sale. Enjoy 10% off!
+        </p>
+        <form action="#" class="signup_form">
+            <input type="email" name="signup_email" id="signup_email" placeholder="Enter Email" class="signup_email" />
+            <input type="submit" value="Get my 10% off" class="signup_submit" />
+        </form>
+    </div>
+
+    <div class="copyright">
+        <img src="../assets/logo.png" alt="logo" width="100px" />
+        © Copyright - GJ Keramik<br />
+        Hvedevænget 21<br />
+        DK - 4700 Næstved<br />
+        Phone: +45 28 93 19<br />
+        <br />
+        E-mail: johansen@live.dk<br />
+        CVR. 40518037<br />
+
+        <div class="follow">
+            <a href="https://www.instagram.com/gj.keramik/" class="link_social" target="_blank">
+                <img src="../assets/instagram.png" alt="instagram icon"
+                    class="footer_icon_social" />
+            </a>
+
+            <a href="https://m.facebook.com/gj.keramik/?_rdr" class="link_social" target="_blank">
+                <img src="../assets/facebook.png" alt="facebook icon"
+                    class="footer_icon_social" />
+            </a>
+        </div>
+    </div>
+
+    <section class="modal" id="modal_signup">
+        <article class="modal_content">
+            <span class="signup_close">&times;</span>
+            <h2>Thank you for signing up</h2>
+            <p>We will keep you posted</p>
+        </article>
+    </section>
+</footer>
+
+</html>

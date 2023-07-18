@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/main2.css" />
+    <title>GJ KERAMIK FIGURINES</title>
+  </head>
+  <body>
+    <header>
+      <nav class="header_first" id="header_first">
+        <img id="hamburger_menu" src="../assets/hamburger.svg" alt="Menu" />
+        <img
+          src="../assets/logo.png"
+          alt="GJ KERAMIK LOGO"
+          class="logo_image"
+        />
+        <div class="brand_width">
+          <a class="logo" href="index.html">
+            <img src="../assets/brand_name.png" alt="GJ KERAMIK"
+          /></a>
+        </div>
+
+        <div class="search_button">
+          <img id="search_icon" src="../assets/search.png" alt="Search" />
+        </div>
+        <a class="login" href="#"
+          ><img src="../assets/login.png" alt="login"
+        /></a>
+        <a class="shopping_cart" href="#"
+          ><img src="../assets/cart.png" alt="cart"
+        /></a>
+      </nav>
+      <nav class="header_second" id="header_second">
+        <img
+          class="hidden"
+          id="close_button"
+          src="../assets/close.png"
+          alt="Menu"
+        />
+
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li class="menu_dropdown">
+            <a href="#">Shop</a>
+            <div class="menu_mobile_arrows">
+              <img
+                id="mobile_menu_arrow"
+                src="../assets/arrow_down.svg"
+                alt="down"
+              />
+              <img
+                class="hidden"
+                id="arrow_up"
+                src="../assets/arrow_up.svg"
+                alt="up"
+              />
+            </div>
+            <ul class="hidden" id="dropdown_content1">
+              <li>
+                <a href="product_list.html?category=figurine">Figurines</a>
+              </li>
+              <li>
+                <a href="product_list.html?category=kitchenware"
+                  >Kitchen Wares</a
+                >
+              </li>
+              <li>
+                <a href="product_list.html?category=vaseandpot">Vase & Pots</a>
+              </li>
+            </ul>
+          </li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="about_us.html">About GJ</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="heading_wrapper">
+        <div class="breadcrumbs_wrapper">
+          <ul class="breadcrumbs">
+            <li class="breadcrumbs_item breadcrumbs_home">
+              <a href="index.html" class="breadcrumbs_link home_link"
+                >Home &nbsp;</a
+              >
+            </li>
+            <li class="breadcrumbs_item">
+              /
+              <a href="product_list.html" class="breadcrumbs_link">
+                Shop &nbsp;</a
+              >
+            </li>
+            <li class="breadcrumbs_item">
+              / <span class="breadcrumbs_item_active">Figurines</span>
+            </li>
+          </ul>
+        </div>
+        <h1></h1>
+      </div>
+
+      <aside class="filter">
+        <form action="#" id="filter_form">
+          <label for="colors" class="colors">
+            <span>Colour</span>
+          </label>
+          <div id="color">
+            <div class="check">
+              <input
+                type="checkbox"
+                name="blue"
+                id="blue"
+                onchange="window.location.href='product_list.html?productColor=blue'"
+              />
+              <label for="blue" class="check_blue"></label>
+            </div>
+            <div class="check">
+              <input
+                type="checkbox"
+                name="red"
+                id="red"
+                onchange="window.location.href='product_list.html?productColor=red'"
+              />
+              <label for="red" class="check_red"></label>
+            </div>
+            <div class="check">
+              <input
+                type="checkbox"
+                name="green"
+                id="green"
+                onchange="window.location.href='product_list.html?productColor=green'"
+              />
+              <label for="green" class="check_green"></label>
+            </div>
+            <div class="check">
+              <input
+                type="checkbox"
+                name="yellow"
+                id="yellow"
+                onchange="window.location.href='product_list.html?productColor=yellow'"
+              />
+              <label for="yellow" class="check_yellow"></label>
+            </div>
+            <div class="check">
+              <input
+                type="checkbox"
+                name="beige"
+                id="beige"
+                onchange="window.location.href='product_list.html?productColor=beige'"
+              />
+              <label for="beige" class="check_beige"></label>
+            </div>
+            <div class="check">
+              <input
+                type="checkbox"
+                name="pink"
+                id="pink"
+                onchange="window.location.href='product_list.html?productColor=pink'"
+              />
+              <label for="pink" class="check_pink"></label>
+            </div>
+            <div class="check">
+              <input
+                type="checkbox"
+                name="white"
+                id="white"
+                onchange="window.location.href='product_list.html?productColor=white'"
+              />
+              <label for="white" class="check_white"></label>
+            </div>
+            <div class="check">
+              <input
+                type="checkbox"
+                name="gray"
+                id="gray"
+                onchange="window.location.href='product_list.html?productColor=gray'"
+              />
+              <label for="gray" class="check_gray"></label>
+            </div>
+          </div>
+        </form>
+      </aside>
+
+      <section class="products">
+        <div class="products_content"></div>
+
+        <div class="filter_empty hidden">
+          <p>No products available.</p>
+        </div>
+      </section>
+
+      <template class="products_template">
+        <article class="products_item">
+          <a href="#" class="products_link">
+            <img
+              src="../assets/84_1.jpg"
+              alt="Salt Pot"
+              class="products_thumbnail"
+            />
+          </a>
+
+          <h3 class="products_title">Alexandra</h3>
+          <p class="products_price">
+            &nbsp;<span class="regular_price"
+              ><span class="regular_price_number"> 300</span> DKK</span
+            >
+          </p>
+        </article>
+      </template>
+    </main>
+
+    <footer class="main_footer">
+      <div class="faq">
+        <div class="footer_heading_wrapper">
+          <h4>FAQ</h4>
+          <img src="../assets/arrow_down.svg" alt="arrow down icon" />
+        </div>
+        <ul>
+          <li><a href="#" class="footer_menu_link">Contact Us</a></li>
+          <li><a href="#" class="footer_menu_link">Terms and Conditions</a></li>
+          <li><a href="#" class="footer_menu_link">Privacy Policy</a></li>
+        </ul>
+        <div class="payment_images">
+          <br />
+          <img src="../assets/cards.png" alt="dankort" class="footer_icon" />
+        </div>
+        <div class="footer_divider"></div>
+      </div>
+
+      <div class="signup">
+        <h4>Let's Keep in Touch</h4>
+        <p>
+          Sign up for my newsletter to be notified about the latest collections,
+          workshop events and sale. Enjoy 10% off!
+        </p>
+        <form action="#" class="signup_form">
+          <input
+            type="email"
+            name="signup_email"
+            id="signup_email"
+            placeholder="Enter Email"
+            required
+            class="signup_email"
+          />
+          <input type="submit" value="Get my 10% off" class="signup_submit" />
+        </form>
+      </div>
+
+      <div class="copyright">
+        <img src="../assets/logo.png" alt="logo" width="100px" />
+        © Copyright - GJ Keramik<br />
+        Hvedevænget 21<br />
+        DK - 4700 Næstved<br />
+        Phone: +45 28 93 19<br />
+        <br />
+        E-mail: johansen@live.dk<br />
+        CVR. 40518037<br />
+
+        <div class="follow">
+          <a
+            href="https://www.instagram.com/gj.keramik/"
+            class="link_social"
+            target="_blank"
+          >
+            <img
+              src="../assets/instagram.png"
+              alt="instagram icon"
+              class="footer_icon_social"
+            />
+          </a>
+
+          <a
+            href="https://m.facebook.com/gj.keramik/?_rdr"
+            class="link_social"
+            target="_blank"
+          >
+            <img
+              src="../assets/facebook.png"
+              alt="facebook icon"
+              class="footer_icon_social"
+            />
+          </a>
+        </div>
+      </div>
+
+      <section class="modal" id="modal_signup">
+        <article class="modal_content">
+          <span class="signup_close">&times;</span>
+          <h2>Thank you for signing up</h2>
+          <p>We will keep you posted</p>
+        </article>
+      </section>
+    </footer>
+    <!-- <script src="js/main.js"></script> -->
+    <!-- <script src="js/filter_collection.js"></script> -->
+    <script src="js/product_list.js"></script>
+    <script src="js/filter.js"></script>
+  </body>
+</html>

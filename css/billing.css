@@ -1,0 +1,183 @@
+/* form */
+
+#form_page > main {
+  /* display: grid;
+  grid-template-columns: 1fr 4fr 2fr 1fr;
+  padding-top: 185px;
+  grid-column-gap: 85px; */
+  display: flex;
+  padding-top: 185px;
+  grid-column-gap: 130px;
+  flex-wrap: wrap;
+  align-content: space-around;
+  justify-content: center;
+}
+
+#form_page .pic_left {
+  grid-column: 1 / span 1;
+  background-image: url("../assets/images/me-mover_white.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: left top;
+}
+
+#form_page .form {
+  grid-column: 2 / span 1;
+}
+
+#form_page .pic_right {
+  grid-column: 3 / span 1;
+  background-image: url("../assets/images/me-mover-bluepring.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
+
+#form_page .pic_right > img,
+#form_page .pic_left > img {
+  max-width: 100%;
+}
+
+.form > form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form > form input {
+  display: block;
+  width: 100%;
+  height: calc(2rem + 0.6vw);
+  border-radius: 2px;
+}
+
+.form > form input:invalid {
+  border: 2px solid red;
+}
+
+.form > form input:valid {
+  border: 2px solid #0093be;
+}
+
+.form > form input:placeholder-shown {
+  border: 2px solid #999999;
+}
+
+.form > form input:focus {
+  border: 2px solid #808080;
+}
+
+.form > h1 {
+  text-transform: uppercase;
+  margin: 2vw 0;
+  font-size: calc(1rem + 0.6vw);
+}
+
+.form > p {
+  margin: 2vw 0;
+}
+
+.form label {
+  margin: 1vw 0;
+}
+
+.form label .red {
+  color: red;
+}
+
+.form .check {
+  margin: 1vw 0;
+}
+
+.form .check label {
+  background-color: #fff;
+}
+
+.form > form input[type="checkbox"] {
+  display: inline;
+  width: 1vw;
+  height: 1vw;
+  margin-left: 0;
+  border-radius: 2px;
+  border: 2px solid #999999;
+}
+
+button.btn.btn_checkout {
+  background: red;
+  margin: 80px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 170%;
+  margin-bottom: 90px;
+}
+
+tr {
+  text-align: left;
+  padding: 8px;
+}
+
+th {
+  font-size: 25px;
+}
+
+tr.total {
+  background: #eed9c0;
+}
+
+/* thank you page  */
+main.thankyou {
+  margin-left: 20%;
+  margin-right: 20%;
+  padding-top: 200px;
+  text-align: center;
+}
+
+main.about_us {
+  background-image: url("http://meetstephen.dk/KEA/2nd_semester/2ndSemExam/assets/background.png");
+  background-size: cover;
+  background-position: initial;
+  padding-top: 200px;
+}
+
+button.btn.btn-primary.btn-shop-more {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.about_us img {
+  width: 500px;
+  box-shadow: 10px 5px 5px black;
+}
+
+.about_us .section_one,
+.about_us .section_two {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  padding-bottom: 200px;
+}
+
+.about_us .content {
+  width: 50%;
+}
+
+.section_one > div {
+  margin-left: 64px;
+  margin-right: 64px;
+}
+
+.section_two > div {
+  margin-left: 64px;
+  margin-right: 64px;
+}
+
+.about_us p {
+  font-size: 20px;
+}
+
+.about_us h1 {
+  font-size: 50px;
+}
